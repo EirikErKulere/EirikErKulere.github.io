@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inria+Serif:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <title>Coding Simulator</title>
+    </head>
+    <body>
+        <header>
+            Coding Simulator
+        </header>
+        <main>
+            <div id="left">
+                <h2 class="money-text jomolhari">$<span class="jomolhari" id="money">-</span></h2>
+                <div id="workers"></div>
+            </div>
+            <div id="middle">
+                <p class="text-stats">
+                    <span class="cps-text-container">
+                        <span id="cps-text">Characters per second: </span><span id="cps">-</span>
+                    </span>
+                    <span class="total-text-container">
+                        <span id="total-text">Total characters: </span><span id="total">0</span>
+                    </span>
+                </p>
+                <textarea
+                    id="text-input"
+                    class="inconsolata"
+                    placeholder="Start typing here!"
+                    spellcheck="false"
+                    onpaste="return false;"
+                ></textarea>
+            </div>
+            <div id="right">
+                <div class="upgrades-container">
+                    <h2 class="upgrades-text">Upgrades</h2>
+                    <div id="upgrades"></div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

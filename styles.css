@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+video,
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+* {
+  font-family: "Inria Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.jomolhari {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 10%;
+    color: white;
+    background-color: #AB4EE6;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 90%;
+    background-color: #201825;
+
+    display: flex;
+}
+
+#left, #middle, #right {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LEFT */
+
+#left {
+    width: 23%;
+}
+
+.money-text {
+    width: 50%;
+    height: 9vh;
+    margin-top: 2.5vh;
+    margin-left: 18%;
+
+    color: white;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#workers {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worker-container {
+    width: 85%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.worker-count {
+    width: 18%;
+
+    color: white;
+
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+.worker-btn-container {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.worker-title {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.worker-btn {
+    width: 100%;
+    height: 38%;
+
+    background-color: #e6c00060;
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+
+    border: none;
+}
+
+.worker-btn-active {
+    background-color: #e6c000;
+}
+
+/* MIDDLE */
+
+#middle {
+    flex: 0.7;
+}
+
+.text-stats {
+    width: 480px;
+    height: 3.5vh;
+
+    margin-top: 0.3vh;
+
+    color: white;
+
+    display: flex;
+    gap: 20px;
+}
+
+.cps-text-container {
+    width: 250px;
+}
+
+#text-input {
+    width: 100%;
+    height: 23%;
+
+    margin-top: 0.3vh;
+    padding: 5px;
+
+    color: #00f000;
+    background-color: black;
+
+    border: none;
+    outline: 4px solid #b0b0b0;
+
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    
+    overflow: hidden;
+    
+    resize: none;
+}
+
+#text-input:focus {
+    outline-color: #00f000;
+}
+
+#text-input::placeholder {
+    color: #606060;
+    font-style: oblique;
+}
+
+/* RIGHT */
+
+#right {
+    width: 35%;
+}
+
+.upgrades-container {
+    width: 80%;
+    min-height: 24%;
+    margin-top: 4.1vh;
+
+    background-color: #202020;
+    outline: 4px solid #b0b0b0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upgrades-text {
+    height: 7vh;
+
+    color: white;
+
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#upgrades {
+    width: 84%;
+    margin-bottom: 8%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.upgrade-btn {
+    width: 100%;
+
+    margin: 3% 0;
+
+    color: #606060;
+    background-color: #121212;
+    border: none;
+    outline: 3px solid #606060;
+
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.upgrade-btn-text {
+    width: 70%;
+    /* margin-left: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%; */
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6vh;
+}
+
+.upgrade-title {
+    font-size: 1.4rem;
+}
+
+.upgrade-description {
+    font-style: oblique;
+}
+
+.upgrade-price-text {
+    margin-right: 4%;
+
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.upgrade-btn-active > * > .upgrade-title {
+    color:#e6c000;
+}
+
+.upgrade-btn-active > * > .upgrade-description {
+    color: white;
+}
+
+.upgrade-btn-active > .upgrade-price-text {
+    color: white;
+}
+
+.upgrade-btn-active {
+    background-color: #1f1a00;
+    outline-color: #e6c000;
+}
+
+@media (max-width: 1200px) {
+    .text-stats {
+        width: 280px;
+    }
+
+    .cps-text-container {
+        width: 150px;
+    }
+}
